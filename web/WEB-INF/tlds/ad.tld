@@ -101,4 +101,17 @@ http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 	</tag>
+	<tag>
+		<description>set Upper case for subject</description>
+		<name>capsAd</name>
+		<tag-class>bsu.rfe.java.teacher.tag.CapsAd</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>Bean объявления</description>
+			<name>ad</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
 </taglib>

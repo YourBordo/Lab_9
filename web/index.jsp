@@ -15,14 +15,17 @@
 <%-- Подключить заголовок страницы --%>
 <jsp:include page="/static/header.jsp"></jsp:include>
 <h1>Главная страница</h1>
+
+<input type="submit" value="button">
+
+
 <%-- Вставить разметку 2-колоночной страницы --%>
 <my:layout2Columns leftColumnWidth="68%" rightColumnWidth="28%">
 <jsp:attribute name="leftColumnBody">
 <%-- Содержание левой колонки передаѐтся как атрибут
 leftColumnBody --%>
 	<%-- Извлечь список всех объявлений --%>
-	<ad:getAds range="all" var="adListing"
-			   sort="${sessionScope.sort}" dir="${sessionScope.dir}" />
+	<ad:getAds range="all" var="adListing" sort="${sessionScope.sort}" dir="${sessionScope.dir}" />
 	<%-- Показать объявления без возможности
     редактирования --%>
 	<my:adListing adListing="${adListing}"
